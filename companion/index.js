@@ -29,6 +29,7 @@ messaging.peerSocket.onmessage = function(evt) {
     case "goal":
       const goal = evt.data.goal;
       localStorage.setItem(`goal-${goal.index}`, JSON.stringify(goal))
+      numGoals++;
       break;
     case "delete-goal":
       numGoals--;
@@ -40,6 +41,7 @@ messaging.peerSocket.onmessage = function(evt) {
       localStorage.removeItem(`goal-${numGoals}`)
       break;
     case "delete-all":
+      numGoals = 0
       localStorage.clear();
   }
 }

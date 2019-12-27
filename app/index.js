@@ -97,7 +97,7 @@ playerItems.forEach((element, index) => {
       if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
         messaging.peerSocket.send({action: "goal", goal});
         addGoal(goal.index, goal.scorer, goal.assister);
-        sortedGoals.push(goals);
+        sortedGoals.push(JSON.parse(JSON.stringify(goal)));
         goal.index++;
         numGoals++;
         delete goal.scorer;
@@ -257,6 +257,7 @@ const clearGoals = function() {
 const deleteGoal = function(index) {
   sortedGoals.splice(index, 1);
   numGoals--;
+  goal.index--;
   for (const i = index; i<sortedGoals.length; i++) {
     sortedGoals[i].index = i;
     addGoal(i, sortedGoals[i].scorer, sortedGoals[i].assister);
