@@ -1,0 +1,235 @@
+<svg>
+  <defs>
+    <symbol id="my-tile-item" href="#tile-list-item" focusable="false"
+            pointer-events="none" system-events="all">
+      <text id="text" />
+      <rect id="tile-divider-bottom" class="tile-divider-bottom" />
+      <rect id="touch-me" pointer-events="all" x="0" y="0" width="100%"
+            height="100%-2" opacity="0" />
+    </symbol>
+  </defs>
+  
+  <use id="loading" href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
+    <set href="#copy/text" attributeName="text-buffer"
+         to="Loading..."/>
+  </use>
+  
+  <use id="add-players" href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
+    <set href="#copy/text" attributeName="text-buffer"
+         to="Add players in the settings on your phone to start recording goals"/>
+  </use>
+  
+  <use id="no-goals" href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
+    <set href="#copy/text" attributeName="text-buffer"
+         to="No goals"/>
+  </use>
+  
+  <use id="max-goals" href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
+    <set href="#copy/text" attributeName="text-buffer"
+         to="Reached 20 goals maximum. Remove goals to add more."/>
+  </use>
+  
+  <use id="new-goal" class="home-button" href="#square-button" y="5" fill="blue">
+    <set href="#text" attributeName="text-buffer" to="New goal" />
+  </use>
+  
+  <use id="goals" class="home-button" href="#square-button" y="$" fill="yellow">
+    <set href="#text" attributeName="text-buffer" to="Goals" />
+  </use>
+  
+  <use id="delete-goals" class="home-button" href="#square-button" y="$" fill="red">
+    <set href="#text" attributeName="text-buffer" to="Clear all" />
+  </use>
+  
+  <use id="view-header" href="#mixed-text-center-mid" x="33%" height="50" fill="fb-yellow">
+    <set href="#header/text" attributeName="text-buffer" to="Goal"/>
+    <set href="#header/text" attributeName="text-length" to="6" />
+  </use>
+  
+  <use id="player-list" y="0" href="#tile-list">
+    <var id="peek-enabled" value="0" />
+    <var id="reorder-enabled" value="0"/>
+    <var id="separator-height-bottom" value="2" />
+    <use id="player-0" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-1" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-2" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-3" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-4" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-5" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-6" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-7" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-8" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-9" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-10" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-11" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-12" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-13" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-14" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-15" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-16" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-17" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-18" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-19" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="player-alt" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+  </use>
+  
+  <use id="goal-list" y="$" href="#tile-list">
+    <var id="peek-enabled" value="0" />
+    <var id="reorder-enabled" value="0"/>
+    <var id="separator-height-bottom" value="2" />
+    <use id="goal-0" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-1" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-2" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-3" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-4" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-5" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-6" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-7" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-8" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-9" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-10" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-11" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-12" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-13" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-14" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-15" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-16" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-17" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-18" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+    <use id="goal-19" href="#my-tile-item" class="tile-list-item">
+      <set href="text" attributeName="text-buffer" />
+    </use>
+  </use>
+  
+  <svg id="delete-goals-popup" display="none">
+    <!-- Black background -->
+    <rect class="full-size" fill="fb-black" />
+
+    <!-- Title and text -->
+    <use href="#mixed-text-center-mid" class="dialog-mixed-text" fill="fb-white">
+      <set href="#top-padding" attributeName="display" to="none" />
+      <set href="#header/text" attributeName="text-buffer" to="Delete all goals?" />
+      <set href="#header/text" attributeName="fill" to="fb-magenta"/>
+      <set href="#copy/text" attributeName="text-buffer" to="This cannot be undone" />
+      <set href="#bottom-padding" attributeName="display" to="none" />
+    </use>
+
+    <!-- Left button -->
+    <use id="delete-goals-cancel" class="dialog-half-button-left" href="#square-button-neutral">
+      <set href="#text" attributeName="text-buffer" to="Cancel" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
+    </use>
+
+    <!-- Right button -->
+    <use id="delete-goals-confirm" class="dialog-half-button-right" href="#square-button-negative">
+      <set href="#text" attributeName="text-buffer" to="Confirm" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
+    </use>
+  </svg>
+  
+  <svg id="delete-single-goal-popup" display="none">
+    <!-- Black background -->
+    <rect class="full-size" fill="fb-black" />
+
+    <!-- Title and text -->
+    <use id="delete-single-goal-title" href="#mixed-text-center-mid" class="dialog-mixed-text" fill="fb-white">
+      <set href="#top-padding" attributeName="display" to="none" />
+      <set href="#header/text" attributeName="text-buffer" to="Delete this goal?" />
+      <set href="#header/text" attributeName="fill" to="fb-magenta"/>
+      <set href="#copy/text" attributeName="text-buffer" to="This cannot be undone" />
+      <set href="#bottom-padding" attributeName="display" to="none" />
+    </use>
+
+    <!-- Left button -->
+    <use id="delete-single-goal-cancel" class="dialog-half-button-left" href="#square-button-neutral">
+      <set href="#text" attributeName="text-buffer" to="Cancel" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
+    </use>
+
+    <!-- Right button -->
+    <use id="delete-single-goal-confirm" class="dialog-half-button-right" href="#square-button-negative">
+      <set href="#text" attributeName="text-buffer" to="Confirm" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
+    </use>
+  </svg>
+</svg>

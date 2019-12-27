@@ -1,0 +1,22 @@
+{
+  "fitbit": {
+    "appUUID": "e604642d-ad1f-4e7d-aa2a-452e1ecdedab",
+    "appType": "app",
+    "appDisplayName": "Goals",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Goals"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0"
+  }
+}
