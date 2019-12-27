@@ -1,4 +1,4 @@
-### Goals
+### Goals
 
 Fitbit Ionic app that can be used to track scorer and assister for goals while playing a game of football (or any sport that has the concept of goals, scoring and assisting).
 
